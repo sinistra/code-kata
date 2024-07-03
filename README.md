@@ -31,4 +31,23 @@ Submit a GitHub / Bitbucket repo for review. No ZIP files!
 
 Do I need to write tests for connecting to API ?
 
-That can be ommitted.
+That can be omitted.
+
+
+Notes:
+
+To build & run a Docker container
+
+`docker run --rm -it $(docker build -q .)`
+
+To build a local cli
+
+`go mod tidy`
+
+`go build ./cmd/cli`
+
+To run a local cli
+
+`go mod tidy`
+
+`go run ./cmd/cli`
