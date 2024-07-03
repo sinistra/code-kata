@@ -7,7 +7,7 @@ WORKDIR /app
 # Call go mod command to pull in any dependencies
 RUN go mod download
 # Project will now successfully build with the necessary libraries included.
-# RUN go build -o api .
+# RUN go build .
 RUN CGO_ENABLED=0 GOOS=linux go build ./cmd/cli
 
 #lightweight container to start with
